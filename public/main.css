@@ -1,13 +1,63 @@
 body {
   font-family: sans-serif;
+  background-image: url("https://wallpaperaccess.com/full/253332.jpg");
+  background-repeat: no-repeat;
 }
 
 .main-header{
   text-align: center;
-}
+  padding-top: 3rem;
+  color: #fff;
+  font-weight: bolder;
+  text-shadow: -3px -2px 3px black;
 
+}
 
 .book-search{
   margin: 0 auto;
-  
+  background: #fff;
+  width: 50%;
+  height: 600px;
+  border-radius: 15px;
+  padding-top: 3rem;
+  margin-top: 2rem;
+}
+
+span{
+  font-weight: bolder;
+}
+
+.myNav{
+  font-weight: bold;
+}
+
+.foot{
+  height: 100px;
+}
+
+.foot-logo{
+  width: 5%;
+}
+
+.book-wrapper{
+  width: 60%;
+  height: 500px;
+  margin: 0 auto;
+  background: red;
+}
+
+.book-img{
+  position: relative;
+  left: 11.75rem;
+  width: 33%;
+}
+
+.book-wrapper p{
+  margin: 0;
+  padding: 1.25% 0 1.25% 0;
+  font-size: 20px;
+}
+
+.book-wrapper span{
+  font-size: 20px;
 }

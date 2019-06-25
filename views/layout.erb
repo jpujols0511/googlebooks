@@ -10,7 +10,45 @@
     <title></title>
   </head>
   <body>
-<h1>Home</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand myNav" href="#">GoogleBooks</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/home">Books</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Learn more
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Authors</a>
+              <a class="dropdown-item" href="#">Nearest Library</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Make appointment</a>
+            </div>
+          </li>
+        </ul>
+        <form action="results" class="form-inline my-2 my-lg-0" method="get">
+          <input  class="form-control mr-sm-2" name="book" type="Search" placeholder="Search a book title" aria-label="Search" >
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <h1 class='main-header'>Welcome to the Bank of Knowledge</h1>
+
+    <%=yield%>
+    <footer>
+      <div class="foot">
+        <img class='foot-logo' src="https://img.talkandroid.com/uploads/2015/09/google-play-books-logo.png" alt="">
+      </div>
+    </footer>
   </body>
-  <%=yield%>
 </html>

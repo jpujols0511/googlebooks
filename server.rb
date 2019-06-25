@@ -1,16 +1,18 @@
 require "googlebooks"
 require "sinatra"
 
-get "/" do
-  erb :home
+get "/results" do
+  theResult = GoogleBooks.search("#{params[:book]}")
+  bookResult = theResult.first
+
+  @bookAuthor = bookResult.authors
+  @bookTitle = bookResult.title
+  @bookID = bookResult.id
+  @bookISNB = bookResult.isnb
+  @bookImage = bookResult.image_link
+  erb :results
 end
 
-get "/results" do
-  theResult = GoogleBooks.search("#{params[:search]}")
-  result = theResult.first
-  @rapport = result.authors
-  @theID = result.id
-  @image = result.image_link
-  @image2 = result.title
-  erb :results
+get "/" do
+  erb :home
 end

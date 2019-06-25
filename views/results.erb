@@ -28,14 +28,19 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" name="search" type="search" placeholder="Search" aria-label="Search">
+      <input action="results" class="form-control mr-sm-2" name="book" type="Search" placeholder="Search" aria-label="Search" method="get">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
 </nav>
 
+<h1 class='main-header'>Welcome to the Bank of Knowledge</h1>
+<div class="book-search">
+  <p><%=@bookResult%></p>
+  <p><%=@bookTitle%></p>
+  <p><%=@bookAuthor%></p>
+  <p><%=@bookID%></p>
+  <p><%=@bookISNB%></p>
+  <img src="<%=@bookImage%>" alt="">
 
-<p><%=@rapport%></p>
-<p><%=@theID%></p>
-<img src="<%=@image%>" alt="">
-<p><%=@image2%></p>
+</div>

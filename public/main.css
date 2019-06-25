@@ -15,12 +15,14 @@ body {
 
 .book-search{
   margin: 0 auto;
-  background: #fff;
+  background: #333;
   width: 50%;
   height: 600px;
   border-radius: 15px;
   padding-top: 3rem;
   margin-top: 2rem;
+  color: #fff;
+
 }
 
 span{
@@ -41,23 +43,31 @@ span{
 
 .book-wrapper{
   width: 60%;
-  height: 500px;
-  margin: 0 auto;
-  background: red;
+  padding-left: 3rem;
 }
 
 .book-img{
+  width: 21%;
   position: relative;
-  left: 11.75rem;
-  width: 33%;
+  bottom: 18.75rem;
+  left: 37rem;
 }
 
 .book-wrapper p{
   margin: 0;
-  padding: 1.25% 0 1.25% 0;
-  font-size: 20px;
+  padding: 6% 0 8% 0;
+  font-size: 22px;
 }
 
 .book-wrapper span{
   font-size: 20px;
+}
+
+#bookTitle{
+  text-align: center;
+    font-size: 24px;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    font-weight: bolder;
 }

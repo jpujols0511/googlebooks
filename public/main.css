@@ -63,7 +63,7 @@ span{
   font-size: 15px;
 }
 
-#bookTitle{
+.bookTitle{
   color: #fff;
   padding-top: 3rem;
   text-shadow: -5px 1px 3px black;
@@ -76,4 +76,31 @@ span{
 
 .title{
   display: inline-block;
+}
+
+.Description{
+  width: 50%;
+  background: #333;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.slideShow{
+  width: 18%;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+
+.carousel{
+  position: relative;
+  width: 50%;
+  background: #333;
+  border-radius: 10px;
+  margin: 0 auto;
+  height: 257px;
+  margin-top: 3rem;
 }

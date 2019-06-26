@@ -5,9 +5,6 @@ get "/" do
   erb :home
 end
 
-get "/home" do
-  erb :home
-end
 
 get "/results" do
   bookSearch = GoogleBooks.search("#{params[:book]}")

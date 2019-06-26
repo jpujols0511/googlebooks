@@ -1,14 +1,18 @@
 
 
-<div class="book-search">
-  <h3 id='bookTitle'><%=@bookTitle%></h3>
-  <div class="book-wrapper">
+<h3 id='bookTitle'><%=@bookTitle%></h3>
+<div class="book-search row">
 
+  <div class="book-wrapper col">
     <p><span>Author Name:</span> <%=@bookAuthor%></p>
     <p><span>Book ID:</span> <%=@bookID%></p>
     <p><span>Book ISBN:</span> <%=@bookISBN%></p>
-    <p><span>Info:</span> <%=@bookISBN%></p>
+    <p><span>Info:</span> <%=@bookInfo%></p>
+  </div>
+  
+  <div class="col theWrapper">
+
+    <img class='book-img' src=" <%=@bookImage%>" alt="">
   </div>
 
-  <img class='book-img' src=" <%=@bookImage%>" alt="">
 </div>

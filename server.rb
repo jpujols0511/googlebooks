@@ -19,5 +19,6 @@ get "/results" do
   @bookISBN = bookResult.isbn
   @bookImage = bookResult.image_link
   @bookInfo = bookResult.info_link
+  @bookInfo = bookResult.info_link
   erb :results
 end
